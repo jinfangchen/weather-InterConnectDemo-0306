@@ -4,7 +4,7 @@ pipeline {
     environment {
         IBM_CLOUD_DEVOPS_CREDS = credentials('82789767-7033-4ae9-90a0-436e84468f54')
         IBM_CLOUD_DEVOPS_ORG = 'jichen@us.ibm.com'
-        IBM_CLOUD_DEVOPS_APP_NAME = 'Weather V1'
+        IBM_CLOUD_DEVOPS_APP_NAME = 'Weather-V1-JC-0306'
         IBM_CLOUD_DEVOPS_TOOLCHAIN_ID = '1f4bdb54-fa86-4e06-9530-474d644547f3'
         CF_API="https://api.ng.bluemix.net"
     }
