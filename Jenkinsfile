@@ -85,7 +85,7 @@ pipeline {
         }
         stage('Gate') {
             steps {
-                evaluateGate policy: ' Weather PRODUCTION Deployment Checks', forceDecision: 'true'
+                evaluateGate policy: 'Weather PRODUCTION Deployment Checks', forceDecision: 'true'
             }
         }
         stage('Deploy to Prod') {
