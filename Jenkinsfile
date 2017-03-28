@@ -9,7 +9,7 @@ pipeline {
         CF_API="https://api.ng.bluemix.net"
     }
     tools {
-        nodejs 'recent'
+        nodejs 'recent NodeJS'
     }
     stages {
         stage('Build') {
