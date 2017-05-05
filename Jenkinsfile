@@ -9,12 +9,12 @@
 pipeline {
     agent any
     environment {
-        // You need to specify 4 required environment variables first, they are going to be used for the following IBM Cloud DevOps steps
+        // You need to specify 5 required environment variables first, they are going to be used for the following IBM Cloud DevOps steps
         IBM_CLOUD_DEVOPS_CREDS = credentials('82789767-7033-4ae9-90a0-436e84468f54')
         IBM_CLOUD_DEVOPS_ORG = 'jichen@us.ibm.com'
         IBM_CLOUD_DEVOPS_APP_NAME = 'Weather-V1-JC-0306'
         IBM_CLOUD_DEVOPS_TOOLCHAIN_ID = '1f4bdb54-fa86-4e06-9530-474d644547f3'
-        CF_API="https://api.ng.bluemix.net"
+        IBM_CLOUD_DEVOPS_WEBHOOK_URL = 'https://jenkins:a44671f5-a958-4165-8d82-acdcb52f3c25:ae4bb011-b961-447d-919f-3e6697b2ba47@devops-api.ng.bluemix.net/v1/toolint/messaging/webhook/publish'
     }
     tools {
         nodejs 'recent NodeJS'
